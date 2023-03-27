@@ -1,0 +1,72 @@
+:root {
+  --white: #fff;
+  --primary-color: #edf1d6;
+  --secondary-color: #9dc08b;
+  --third-color: #609966;
+  --fourth-color: #40513b;
+  --font-title: "Roboto", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #f9f7f7;
+  font-family: var(--font-title);
+}
+
+.datos-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.6em;
+  background: #f9f7f7;
+  padding: 1.125em 0;
+}
+
+.title-container {
+  padding: 1.125em;
+  color: var(--white);
+  background: var(--secondary-color);
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.datos-card {
+  width: 90%;
+  padding: 2em 0.6em 3em 0.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: var(--white);
+  border-radius: 6px;
+  box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 0%, 0.2),
+    -1.5px 1.5px 1.5px hsl(0, 0%, 0%, 0.2);
+}
+
+.datos-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.datos-card h2 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.datos-card p {
+  color: var(--third-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  width: 100%;
+}
