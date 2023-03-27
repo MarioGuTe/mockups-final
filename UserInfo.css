@@ -36,13 +36,13 @@ body {
   padding: 1.125em;
   color: var(--white);
   background: var(--secondary-color);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border-radius: 6px;
 }
 
 .datos-card {
   width: 90%;
-  padding: 2em 0.6em 3em 0.6em;
+  padding: 2em 0 3em 0;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -56,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.6em;
+  margin-left: 2.4em;
 }
 
 .datos-card h2 {
@@ -69,4 +70,24 @@ body {
   font-weight: 700;
   letter-spacing: 0.8px;
   width: 100%;
+}
+
+@media (min-width: 700px) {
+  .datos-card {
+    width: 84%;
+  }
+  .datos-card h2,
+  .datos-card p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .datos-card {
+    width: 68%;
+  }
+  .datos-card h2,
+  .datos-card p {
+    font-size: 1.6rem;
+  }
 }
