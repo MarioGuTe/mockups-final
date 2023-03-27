@@ -1,0 +1,156 @@
+:root {
+  --white: #fff;
+  --primary-color: #edf1d6;
+  --secondary-color: #9dc08b;
+  --third-color: #609966;
+  --fourth-color: #40513b;
+  --font-title: "Roboto", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #f9f7f7;
+  font-family: var(--font-title);
+}
+
+.cart-main-container {
+  height: 100%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.items-section {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+  overflow: scroll;
+}
+
+.card-product {
+  background: var(--white);
+  width: 86%;
+  box-shadow: 1.5px 1.5px 1.5px hsl(0, 0%, 0%, 0.2),
+    -1.5px 1.5px 1.5px hsl(0, 0%, 0%, 0.2);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  padding: 6px;
+}
+
+figure {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  height: 100px;
+}
+
+h1 {
+  align-self: start;
+  padding: 2%;
+  color: var(--third-color);
+  font-size: 1.4rem;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.card-description h2 {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.card-description p {
+  color: var(--third-color);
+  font-size: 1.125rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.product-qty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-qty p {
+  background: var(--primary-color);
+  font-size: 1.2rem;
+  color: var(--third-color);
+  font-weight: 600;
+  width: 20px;
+}
+
+.product-qty button {
+  background: var(--secondary-color);
+  border: none;
+  color: var(--white);
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var();
+  padding: 1em;
+}
+
+.checkout-card {
+  background: var(--white);
+  width: 100%;
+  padding: 2.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.checkout-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  color: var(--third-color);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.checkout-btn-container button {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 1em 8em;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  font-weight: 600;
+}

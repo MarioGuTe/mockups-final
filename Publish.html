@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Publish.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="">
+        <div class="actions-container">
+          <p>Cancelar</p>
+          <p>Publicar</p>
+        </div>
+        <div class="input-container">
+          <div class="upload-input-container">
+            <input
+              placeholder="Añadir Fotos"
+              class="upload-input"
+              type="file"
+              accept="image/*"
+            />
+            <label for="upload-label">
+              <i class="fa-solid fa-upload"></i>
+              Añadir Fotos
+            </label>
+          </div>
+          <input placeholder="Título" type="text" />
+          <input placeholder="Precio" type="text" />
+          <select name="category" id="select-category">
+            <option value="select" disabled selected>
+              <span>Categoría</span>
+            </option>
+          </select>
+          <input
+            class="description-input"
+            placeholder="Descripción"
+            type="text"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
