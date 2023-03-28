@@ -23,20 +23,22 @@ body {
 
 .cart-main-container {
   height: 100%;
-  display: grid;
+  width: 100%;
   text-align: center;
-  grid-template-columns: 1fr;
-  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .items-section {
   width: 100%;
-  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2%;
+  gap: 8px;
   overflow: scroll;
+  padding: 2px;
 }
 
 .card-product {
@@ -116,11 +118,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: var();
-  padding: 1em;
+  padding: 0.4em;
 }
 
 .checkout-card {
@@ -153,4 +153,28 @@ h1 {
   font-family: var(--font-title);
   font-size: 1.125rem;
   font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .card-product {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .cart-main-container {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 60% 40%;
+    margin-top: 6%;
+    height: 100%;
+  }
+
+  .checkout-btn-container button {
+    padding: 1em 6em;
+  }
+
+  .card-product {
+    width: 90%;
+  }
 }
