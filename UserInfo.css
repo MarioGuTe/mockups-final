@@ -26,10 +26,11 @@ body {
 
 .datos-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-betweens;
-  gap: 2.6em;
+  justify-content: center;
+  gap: 2em;
   background: #f9f7f7;
   padding: 1.125em 0;
 }
@@ -59,6 +60,7 @@ body {
   flex-direction: column;
   gap: 0.6em;
   margin-left: 2.4em;
+  margin-right: 2.4em;
 }
 
 .datos-card h2 {
@@ -72,6 +74,13 @@ body {
   font-weight: 700;
   letter-spacing: 0.8px;
   width: 100%;
+}
+
+@media (max-width: 250px) {
+  .datos-card > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 700px) {
