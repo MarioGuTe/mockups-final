@@ -173,6 +173,24 @@ h1 {
   }
 
   .card-product {
-    width: 90%;
+    width: 80%;
+  }
+  .product-qty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-qty p {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-qty button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
   }
 }
